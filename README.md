@@ -1,2 +1,1 @@
-# socialLoginProject
-소셜 로그인 프로젝트
+srver IP : 172.31.44.96
