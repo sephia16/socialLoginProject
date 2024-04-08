@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import { ping } from './controller/system.js';
 
 const serverPort = 3000;
 const app = express();
@@ -14,10 +15,7 @@ app.use(cors());
 
 const router = express.Router();
 
-const ping = (req, res) => {
-    const result = true;
-    res.send({result});
-};
+
 
 router.route('/ping').get(ping);
 
